@@ -1,4 +1,4 @@
-
+import React, { Component } from 'react';
 import './App.css';
 const item = {
   brand: 'Tiger of Sweden',
@@ -8,7 +8,8 @@ const item = {
   price: '399.00',
   currency: '£'
 }
-function ShopItemFunc (){
+class ShopItemFunc extends Component {
+  render() {
   return (
 <div className="main-content">
   <h2>{item.brand}</h2>
@@ -25,7 +26,7 @@ function ShopItemFunc (){
   </div>
 </div>
   );
-
+  }
 } 
 function App() {
   return (
